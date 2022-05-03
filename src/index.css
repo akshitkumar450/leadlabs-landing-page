@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar__big {
+    @apply px-3 py-2 block cursor-pointer font-semibold text-[#000] text-lg;
+  }
+  .navbar__small {
+    @apply text-[#000] block px-3 py-2 text-base font-semibold;
+  }
+}
