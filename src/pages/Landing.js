@@ -9,12 +9,16 @@ import Widget from "../components/Landing/Widget";
 import Interactive from "../components/Landing/Interactive";
 import Features from "../components/Landing/Features";
 import Visitor from "../components/Landing/Visitor";
+import Reviews from "../components/Landing/Reviews";
+import TopBar from "../components/Landing/TopBar";
 
 function Landing() {
   return (
     <div>
+      <TopBar />
       <Header />
       <Companies />
+      <Reviews />
       <Excellent />
       <LeadleyWorks />
       <Widget />

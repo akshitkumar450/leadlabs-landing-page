@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <ScrollToTop />
-        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />

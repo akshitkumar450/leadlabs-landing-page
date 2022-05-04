@@ -5,7 +5,7 @@ import trusted from "../../assets/trusted.png";
 import CCRequired from "../../assets/cc-required.png";
 function Header() {
   return (
-    <header id="home" className="mt-24 grid lg:grid-cols-2 ">
+    <header id="home" className="t-24 grid lg:grid-cols-2 ">
       <div className="col-span-1 grid place-content-center bg-[#F4F5FE] p-5 lg:px-10">
         <h1
           className="text-3xl lg:text-4xl font-semibold capitalize"
@@ -22,7 +22,7 @@ function Header() {
           interactive experiences to convert your traffic into leads.
         </p>
 
-        <div className="px-1 lg:p-2 bg-white lg:flex lg:justify-between rounded-lg">
+        {/* <div className="px-1 lg:p-2 bg-white lg:flex lg:justify-between rounded-lg">
           <input
             type="email"
             className="h-full w-full lg:w-72 outline-none"
@@ -31,9 +31,23 @@ function Header() {
           <div className="flex justify-center mt-5 lg:mt-0 lg:block">
             <Btn>Get Started for free</Btn>
           </div>
+        </div> */}
+
+        <div className="px-1 lg:p-2 bg-white lg:flex lg:justify-between rounded-lg mt-5">
+          <input
+            type="email"
+            className="h-14 w-full px-3 lg:px-0 lg:w-96 outline-none"
+            placeholder="Enter email"
+          />
+          <div className="hidden lg:flex lg:justify-center">
+            <Btn>Get Started for free</Btn>
+          </div>
+        </div>
+        <div className="lg:hidden flex justify-center mt-5 ">
+          <Btn>Get Started for free</Btn>
         </div>
 
-        <div className="flex items-center gap-x-5 mt-20 lg:mt-2">
+        <div className="flex items-center gap-x-5 mt-5 lg:mt-2">
           <div className="flex items-center">
             <img src={trusted} alt="trusted" />
             <p className="text-sm lg:text-md  text-gray-500 ml-2">

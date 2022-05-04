@@ -11,6 +11,7 @@ import { Helmet } from "react-helmet";
 import Conventional from "../components/Home/Conventional";
 import Leadley from "../components/Home/Leadley";
 import FullImg from "../components/Home/FullImg";
+import Navbar from "../components/NavFooter/Navbar";
 
 function Home() {
   return (
@@ -45,17 +46,11 @@ function Home() {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
+      <Navbar />
       <Header />
       <Conventional />
       <FullImg />
       <Leadley />
-
-      {/* <PlayWidget img={thumbnail} />
-      <StepCards />
-      <LeadlyAddOn />
-      <Demo />
-      <Cards />
-     */}
       <Working />
       <Widget />
       <Features />
