@@ -5,7 +5,7 @@ import trusted from "../../assets/trusted.png";
 import CCRequired from "../../assets/cc-required.png";
 function Header() {
   return (
-    <header id="home" className="t-24 grid lg:grid-cols-2 ">
+    <header id="home" className="grid lg:grid-cols-2">
       <div className="col-span-1 grid place-content-center bg-[#F4F5FE] p-5 lg:px-10">
         <h1
           className="text-3xl lg:text-4xl font-semibold capitalize"
@@ -21,17 +21,6 @@ function Header() {
           Are you monetizing your website traffic? With LeadLabs, you can create
           interactive experiences to convert your traffic into leads.
         </p>
-
-        {/* <div className="px-1 lg:p-2 bg-white lg:flex lg:justify-between rounded-lg">
-          <input
-            type="email"
-            className="h-full w-full lg:w-72 outline-none"
-            placeholder="Enter email"
-          />
-          <div className="flex justify-center mt-5 lg:mt-0 lg:block">
-            <Btn>Get Started for free</Btn>
-          </div>
-        </div> */}
 
         <div className="px-1 lg:p-2 bg-white lg:flex lg:justify-between rounded-lg mt-5">
           <input

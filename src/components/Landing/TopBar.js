@@ -6,16 +6,7 @@ function TopBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    // <div className="grid grid-cols-2">
-    //   <div className="bg-[#F4F5FE] pl-10 py-3">
-    //     <img src={logo} className="mt-4 md:mt-0 w-40" alt="Ezcolab-logo" />
-    //   </div>
-    //   <div className="bg-[#6D83E8] flex items-center justify-end pr-10 py-3">
-    //     <p className="text-[#6D83E8] bg-white p-2 inline rounded-lg">Sign Up</p>
-    //   </div>
-    // </div>
-
-    <nav className={` lg:bg-transparent  w-full lg:mb-0`}>
+    <nav>
       <div className="relative">
         <div className="h-14 flex items-center lg:block">
           <div className="lg:grid lg:grid-cols-2 flex-1">
@@ -26,14 +17,14 @@ function TopBar() {
                 alt="Ezcolab-logo"
               />
             </div>
-            <div className="bg-[#6D83E8] hidden lg:flex items-center justify-end pr-10 py-3">
+            <div className="bg-[#6D83E8] hidden lg:flex items-center justify-end lg:pr-10 py-3">
               <p className="text-[#6D83E8] bg-white p-2 inline rounded-lg">
                 Sign Up
               </p>
             </div>
           </div>
 
-          <div className="-mr-2 flex md:hidden">
+          <div className=" flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
@@ -93,9 +84,9 @@ function TopBar() {
           <div className="md:hidden" id="mobile-menu">
             <div
               ref={ref}
-              className="px-2 pt-10 pb-5 space-y-1 sm:px-3 text-center"
+              className=" pt-10 pb-5 space-y-1 lg:px-3 text-center"
             >
-              <div className="lg:bg-[#6D83E8] lg:flex items-center justify-end lg:pr-10 pr-0 lg:py-3">
+              <div className="lg:bg-[#6D83E8] lg:flex lg:items-center lg:justify-end lg:pr-10 pr-0 lg:py-3">
                 <p className="text-[#6D83E8] bg-white p-2 inline rounded-lg border-2 border-[#6D83E8] lg:border-0">
                   Sign Up
                 </p>
